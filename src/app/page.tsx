@@ -34,6 +34,23 @@ export default async function Home() {
         </Link>
         <h4 className="text-center text-xl mb-8 font-normal">Analysed. Simplified. Explained.</h4>
         <NewsPage news={politicsNews} />
+
+        <div className="flex justify-end">
+          <Link href={"/news?category=politics"}>
+            <button className="px-6 py-2.5 text-center text-sm mt-8 mb-4 font-medium
+              bg-gray-900 text-white
+              hover:bg-gray-800
+              rounded-md
+              shadow-sm hover:shadow
+              transform hover:-translate-y-0.5
+              transition-all duration-150 
+              flex items-center gap-2">
+              See all Political news 
+              <span className="text-lg">→</span>
+            </button>
+          </Link>
+        </div>
+        
       </div>
 
       <div className="px-8">
@@ -43,6 +60,24 @@ export default async function Home() {
         <h4 className="text-center text-xl mb-8 font-normal">Around the world in 60 seconds</h4>
         
         <NewsPage news={worldNews} />
+
+        <div className="flex justify-end">
+          <Link href={"/news?category=world"}>
+            <button className="px-6 py-2.5 text-center text-sm mt-8 mb-4 font-medium
+              bg-gray-900 text-white
+              hover:bg-gray-800
+              rounded-md
+              shadow-sm hover:shadow
+              transform hover:-translate-y-0.5
+              transition-all duration-150 
+              flex items-center gap-2">
+              See all World news 
+              <span className="text-lg">→</span>
+            </button>
+          </Link>
+        </div>
+
+        
       </div>
 
       <div className="px-8">
@@ -51,6 +86,16 @@ export default async function Home() {
         </Link>
         <h4 className="text-center text-xl mb-8 font-normal">The latest in sports</h4>
         <NewsPage news={sportsNews} />
+
+        <div className="flex justify-end">
+            <Link href={"/news?category=sports"}>
+               <button className="px-6 py-2.5 text-center text-sm mt-8 mb-4 font-medium bg-gray-900 text-white hover:bg-gray-800 rounded-md shadow-sm hover:shadow transform hover:-translate-y-0.5transition-all duration-150 flex items-center gap-2">
+                  See all Sports news 
+                  <span className="text-lg">→</span>
+              </button>
+            </Link>
+        </div>
+
       </div>
 
 
@@ -60,6 +105,16 @@ export default async function Home() {
         </Link>
         <h4 className="text-center text-xl mb-8 font-normal">The latest in business</h4>
         <NewsPage news={businessNews} />
+
+        <div className="flex justify-end">
+               <Link href={"/news?category=business"}>
+                  <button className="px-6 py-2.5 text-center text-sm mt-8 mb-4 font-medium bg-gray-900 text-white hover:bg-gray-800 rounded-md  shadow-sm hover:shadow transform hover:-translate-y-0.5 transition-all duration-150 flex items-center gap-2">
+                      See all Business news 
+                    <span className="text-lg">→</span>
+                  </button>
+               </Link>
+        </div>
+
       </div>
         
       
