@@ -46,7 +46,7 @@ export default function NewsCard({
             {news.heading}
           </h3>
           <p className="line-clamp-3 text-sm text-gray-600">
-            {news.description}
+            {flipflop ? news.report : news.description}
           </p>
         </div>
       </CardContent>
